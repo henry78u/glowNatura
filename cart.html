@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - growNatura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <div class="fheader">
+
+        <div class="logo">
+            <h4>glowNatura</h4>
+        </div>
+        <div class="nav-section">
+            <nav>
+                <li> <img src="/assets/images/icons/search-icon.png" alt=""> </li>
+                <li class="list-1"><a href="cart.html"><img src="/assets/images/icons/cart-icon.png" alt=""></a></a>
+            </nav>
+        </div>
+        </div>
+        <div class="main-nav">
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li class="list-2"><a href="ourShop.html">Shop</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+            </nav>
+        </div>
+    </header>
+    <section class="cartSection" id="cartSection">
+         <div class="ct-head">
+            <h4>Your Products</h4>
+            <p>Our Priority Is Your Satisfaction</p>
+        </div>
+        <div class="ourCart">
+            <div class="cartRow row1">
+                <div class="productImageHead">
+                   <h4>Image</h4>
+                </div>
+
+                <div class="productNameHead">
+                  <h4>Product Name</h4>
+                </div>
+
+                <div class="productPriceHead">
+                    <h4>Price</h4>
+                </div>
+
+                <div class="productQuantityHead">
+                    <h4>Quantity</h4>
+                </div>
+                <div class="subtotalHead">
+                     <h4>Subtotal</h4>
+                </div>
+                <div class="removeCart">
+                    <h4>Remove</h4>
+                </div>
+            </div>
+
+            <div class="allCart" id="allCart">
+            <div class="cartRow ">
+                <div class="productImage">
+                    <img src="assets/images/products/productA.jpg" alt="cart product - growNatura">
+                </div>
+                <div class="productName">
+                    <h6>${products.productTitle}</h6>
+                </div>
+                <div class="productPrice">
+                    <h2>${products.productPrice}</h2>
+                </div>
+                <div class="productQuality">
+                    <input type="text" value="1">
+                </div>
+                <div class="subtotal">
+                     <h2>$16</h2>
+                </div>
+                <div class="removeCart">
+                    <p>×</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="cartCheckout">
+        <div class="cartCheckOutHead">
+            <h3>Cart Total Calculation</h3>
+        </div>
+        <div class="cartCheckoutDetails">
+            <div class="subTotal">
+                <div class="checkTotal">
+                    <h4>Cart Sub-total</h4>
+                </div>
+                <div class="inputTotal">
+                    <h4>$120</h4>
+                </div>
+            </div>
+            <div class="subTotal">
+                <div class="checkTotal">
+                    <h4>Shipping</h4>
+                </div>
+                <div class="inputTotal">
+                    <h4>Free</h4>
+                </div>
+            </div>
+            <div class="subTotal">
+                <div class="checkTotal">
+                    <h4>Total</h4>
+                </div>
+                <div class="inputTotal">
+                    <h4>$120</h4>
+                </div>
+            </div>
+        <div class="cartProceeedButton">
+                <button id="proceedBtn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="trans" id="viewPayment">
+        <h2>Pay with Card Or Transfer</h2>
+        <form action="get">
+            <div class="fInput">
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="Card Number" required><br>
+            <input type="text" name="cardName" id="cardName" placeholder="Card Name" required>
+            </div>
+            <div class="sCard">
+                <div>
+                    <input type="text" name="cardPin" id="cardPin" placeholder="Card Pin" required>
+                </div>
+                
+                <div>
+                   <input type="text" name="cardCvv" id="cardCvv" placeholder="CVV" required>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="payBtn">Pay Now</button>
+            </div>
+        </form>
+    </section>
+
+    <!--script-->
+<script src="config/strCart.js"></script>
+<script src="config/productsArray.js"></script>
+<script src="config/cart.js"></script>
+
+</body>
+</html>
