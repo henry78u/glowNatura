@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+     background: #fff;
+}
+:root{
+    --primary-color: #0E7700;
+}
+section.loginBackground{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 20px;
+}
+section .loginDashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5pc;
+    position: absolute;
+    width: 100%;
+}
+section .loginDashboard .mainLogin{
+    line-height: 1.6;
+    padding: 10px;
+}
+section .loginDashboard .mainLogin h2 {
+    font-size: 35px;
+    text-align: center;
+}
+section .loginDashboard .mainLogin p {
+    font-size: 14px;
+    text-align: center;
+}
+section .loginDashboard .mainLogin form .eachInput{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+}
+section .loginDashboard .mainLogin form .eachInput input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #0e77001e;
+    border: 1px solid #0e77001a;
+    color: #000;
+    transition: .3s ease;
+}
+section .loginDashboard .mainLogin form .eachInput input:focus::placeholder{
+    color: #fff;
+}
+section .loginDashboard .mainLogin form .eachInput img{
+   position: absolute;
+   right: 10px;
+   margin-top: 35px;
+}
+section .loginDashboard .mainLogin form .eachInput input:focus{
+     background-color: #0e770080;
+     border: 1px solid var(--primary-color);
+     color: #fff;
+}
+section .loginDashboard .mainLogin .forgetPassword a{
+    text-align: right;
+    margin-left: 25pc;
+    color: #000;
+}
+section .loginDashboard .mainLogin .navs button{
+    outline: none;
+    padding: 15px 15px;
+    background-color: #0E7700;
+    color: #fff;
+    border: none;
+    transition: .3s ease;
+    width: 70%;
+    margin-top: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+section .loginDashboard .mainLogin .navs button:hover{
+    background-color: #052900;
+}
+section .loginDashboard .mainLogin .loginSignupNow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .loginDashboard .mainLogin .loginSignupNow a{
+    color: #000;
+    font-size: 17px;
+}
+section .loginDashboard .mainLogin .loginSignupNow p{
+    color: #000;
+    font-size: 17px;
+}
+.message{
+    position: fixed;
+    background: #1eff00;
+    display: flex;
+    width: 50vh;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 17px;
+    top: 9px;
+    right: 9px;
+    border-left:12px solid var(--primary-color);
+    z-index: 1;
+}
+.faiiMessage{
+    position: fixed;
+    background: #ff0000;
+    border-left: 12px solid #8f0000;
+    top: 89px;
+}
+.message .exit img{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    transition: 0.1s ease;
+}
+.message .exit img:hover{
+    border-radius: 50%;
+    border: 1px solid #052900;
+    
+}
+.message .successFailureIcon img{
+    height: 35px;
+    width: 35px;
+}
+.message.active{
+    display: none;
+}
+svg {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    z-index: 0;
+    margin-top: 9pc;
+    right: 1px;
+    opacity: 0.15;
+}
+
+.morph path {
+    animation: colorChange 8s infinite ease-in-out;
+    filter: url(#blurFilter);
+}
+.error{
+    color: #ff0000;
+}
+#notHiddenPasswordIcon{
+    display: none;
+}
+#sNotHiddenPasswordIcon{
+    display: none;
+}
+#hiddenPasswordIcon.active{
+    display: none;
+}
+#sHiddenPasswordIcon.active{
+    display: none;
+}
+#sNotHiddenPasswordIcon.active{
+    display: block;
+}
+#notHiddenPasswordIcon.active{
+    display: block;
+}
+
+@keyframes colorChange {
+    0% { fill: #73e75c; }
+    25% { fill: #008f30; }
+    50% { fill: #6efdaa; }
+    75% { fill: #65b970; }
+    100% { fill: #94e75c; }
+}
+@media  screen and (max-width: 991px) {
+.loginBackground .firstDash img{
+        display: none;
+}
+.loginBackground .loginDashboard .mainLogin{
+   border-radius: 20px;
+}
+.loginBackground .loginDashboard{
+    padding: 11pc 8pc;
+}
+}
+@media  screen and (max-width: 768px) { 
+.loginBackground .loginDashboard{
+    padding: 11pc 6pc;
+}
+}
+@media  screen and (max-width: 460px) { 
+.loginBackground .loginDashboard{
+    padding: 11pc 4pc;
+}
+}
+@media  screen and (max-width: 335px) { 
+.loginBackground .loginDashboard{
+    padding: 11pc 2pc;
+}
+}

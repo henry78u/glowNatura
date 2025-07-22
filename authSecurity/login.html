@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - glowNatura</title>
+    <link rel="stylesheet" href="auth.css">
+   
 </head>
 <body>
-    
+    <div class="container">
+    <svg class="morph" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+        <filter id="blurFilter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+        </filter>
+        </defs>
+    <path fill="#6c5ce7">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite"
+        values="
+          M142.5,28.6 C189.2,9.3,263.3,14.4,297.5,51.2 C331.6,88.1,337.1,157.5,313.7,209.3 C290.2,261,237.8,294.3,180.2,296.6 C122.6,298.8,60.8,270.1,45.5,219.3 C30.2,168.5,61.6,95.1,98.3,56.2 C114.8,38.7,128.2,34.3,142.5,28.6Z;
+          
+          M120.5,60.6 C180.2,0.3,280.3,20.4,310.5,70.2 C340.6,120.1,310.1,190.5,280.7,240.3 C251.2,290.2,190.8,310.3,130.2,290.6 C69.6,270.8,20.8,211.1,35.5,160.3 C50.2,109.5,80.6,80.1,110.3,70.2 C120.8,68.7,125.2,64.3,120.5,60.6Z;
+          
+          M132.5,40.6 C179.2,5.3,270.3,30.4,290.5,90.2 C310.6,150.1,290.1,190.5,270.7,230.3 C251.2,270.2,190.8,290.3,130.2,270.6 C69.6,250.8,30.8,191.1,55.5,140.3 C80.2,89.5,100.6,60.1,120.3,50.2 C130.8,48.7,138.2,44.3,132.5,40.6Z;
+
+          M142.5,28.6 C189.2,9.3,263.3,14.4,297.5,51.2 C331.6,88.1,337.1,157.5,313.7,209.3 C290.2,261,237.8,294.3,180.2,296.6 C122.6,298.8,60.8,270.1,45.5,219.3 C30.2,168.5,61.6,95.1,98.3,56.2 C114.8,38.7,128.2,34.3,142.5,28.6Z
+        "
+      />
+    </path>
+  </svg>
+</div>
+
+    <section class="loginBackground">
+        <span></span>
+        <div class="message">
+            <div class="successFailureIcon" style="display: none;">
+                <img src="../assets/images/icons/check_11601272.png" alt="">
+            </div>
+            <div class="pText"><p>Successfully Logged In</p></div>
+            <div class="exit">
+                <img src="../assets/images/icons/wrong-delete-remove-trash-minus-cancel-close-2-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+        <div class="message faiiMessage">
+            <div class="successFailureIcon" style="display: none;">
+                <img src="../assets/images/icons/check_11601272.png" alt="">
+            </div>
+            <div class="pText"><p>Logged In Not Successful</p></div>
+            <div class="exit">
+                <img src="../assets/images/icons/wrong-delete-remove-trash-minus-cancel-close-2-svgrepo-com.svg" alt="">
+            </div>
+        </div>
+    <div class="loginDashboard">
+        <div class="firstDash">
+            <img src="../assets/images/Skincare (1).gif" alt="">
+        </div>
+        <div class="mainLogin">
+            <h2>Login</h2>
+            <p>Welcome back to explore on our different product and get yours immediately.</p>
+            <div class="navs">
+                <form action="#" method="post" id="signupForm">
+                    <div class="eachInput">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Username">
+                        <div id="passwordError" class="error"></div>
+                    </div>
+                    <div class="eachInput">
+                        <label for="password">Password</label>
+                        <input class="reviewedPass" type="password" id="password" name="password" placeholder="Password">
+                        <img class="reviewPassIcon" src="../assets/images/icons/eye-password-hide-svgrepo-com.svg" width="25px" height="25px" alt="">
+                        <img class="reviewPassIcon" id="notHiddenPasswordIcon" src="../assets/images/icons/eye-password-hide-svgrepo-com.svg" width="25px" height="25px" alt="">
+                    </div>
+                    <div class="forgetPassword">
+                         <a href="#">Forget password?</a><br>
+                    </div>
+                   
+                    <button id="loginBtn">Login</button>
+                     <div class="loginSignupNow">
+                        <p>Do not have an Account?</p>
+                        <a href="signUp.html">Signup</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="config/formValidation.js" ></script>
+<script src="config/script.js"></script>
 </body>
 </html>
